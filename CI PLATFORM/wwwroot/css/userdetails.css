@@ -1,0 +1,86 @@
+﻿#profileimg {
+    width: 150px;
+    height: 150px;
+}
+
+.username {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.changepassword {
+    font-weight: lighter;
+    color: #414141;
+    font-size: 14px;
+}
+
+@media only screen and (max-width:768px) {
+    .adjust {
+        height: fit-content !important;
+    }
+
+        .adjust img {
+            margin-top: 0px;
+        }
+}
+
+
+.userdetailsbasic {
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 0.5px solid #D9D9D9;
+}
+.userdetailsbasic p {
+    border-bottom: 2px solid #D9D9D9;
+    max-width: fit-content;
+    margin-bottom: 0;
+}
+.form-control {
+    height: 30px !important;
+    border-color: #D9D9D9 !important;
+}
+textarea {
+    border: 1.5px solid #D9D9D9;
+    border-radius: 4px;
+    min-height: 100px;
+    color: #414141;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.userprofile span {
+    color: #414141;
+    font-size: 15px;
+    font-family: 'Noto Sans Light'
+}
+.bg-secondary {
+    background-color: #D9D9D9 !important;
+}
+
+#changepassword .btn {
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+    #changepassword .btn:hover {
+        cursor: pointer;
+        background: #e7e7e7;
+    }
+
+/*UserImage*/
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap:hover img {
+    opacity: 0.5;
+}
+
+.img-wrap:hover .icon {
+    display: block;
+}
+
+.icon {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}

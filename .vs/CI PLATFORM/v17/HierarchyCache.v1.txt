@@ -1,0 +1,836 @@
+﻿++Solution 'CI PLATFORM' ‎(3 of 3 projects)
+i:{00000000-0000-0000-0000-000000000000}:CI PLATFORM.sln
+++ciplatform.entities
+i:{00000000-0000-0000-0000-000000000000}:ciplatform.entities
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\bin\debug\net6.0\ciplatform.entities.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\bin\debug\net6.0\ciplatform.entities.dll
+++Dependencies
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>707
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>708
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1158
+++Data
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\data\
+++Models
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\models\
+++Admin.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\admin.cs
+++Banner.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\banner.cs
+++City.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\city.cs
+++CmsPage.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\cmspage.cs
+++Comment.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\comment.cs
+++ContactU.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\contactu.cs
+++Country.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\country.cs
+++FavouritMission.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\favouritmission.cs
+++GoalMission.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\goalmission.cs
+++Mission.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\mission.cs
+++MissionApplication.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missionapplication.cs
+++MissionDocument.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missiondocument.cs
+++MissionInvite.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missioninvite.cs
+++MissionMedium.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missionmedium.cs
+++MissionRating.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missionrating.cs
+++MissionSkill.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\missionskill.cs
+++PasswordReset.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\passwordreset.cs
+++Skill.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\skill.cs
+++Story.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\story.cs
+++StoryMedium.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\storymedium.cs
+++StotyInvite.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\stotyinvite.cs
+++Theme.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\theme.cs
+++Timesheet.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\timesheet.cs
+++User.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\user.cs
+++UserSkill.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\models\userskill.cs
+++ViewModels
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\
+++ContactUsViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\contactusviewmodel.cs
+++LandingViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\landingviewmodel.cs
+++LostpasViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\lostpasviewmodel.cs
+++MissionPageForAdminViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\missionpageforadminviewmodel.cs
+++Newpasswordviewmodel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\newpasswordviewmodel.cs
+++RegisterationViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\registerationviewmodel.cs
+++StoryDetailViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\storydetailviewmodel.cs
+++StoryListingViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\storylistingviewmodel.cs
+++TimeSheetViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\timesheetviewmodel.cs
+++UserDetailsViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\userdetailsviewmodel.cs
+++UserPageForAdminViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\userpageforadminviewmodel.cs
+++UsersViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\usersviewmodel.cs
+++VolunteeringMissionViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\volunteeringmissionviewmodel.cs
+++Analyzers
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:analyzers
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:analyzers
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:analyzers
+++Frameworks
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:frameworks
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:frameworks
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:frameworks
+++Packages
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:packages
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:packages
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:packages
+++CidbContext.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\data\cidbcontext.cs
+++Microsoft.AspNetCore.App.Analyzers
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\.nuget\packages\microsoft.entityframeworkcore.analyzers\8.0.0-preview.1.23111.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\.nuget\packages\microsoft.entityframeworkcore.analyzers\8.0.0-preview.1.23111.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\.nuget\packages\microsoft.entityframeworkcore.analyzers\8.0.0-preview.1.23111.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\.nuget\packages\system.text.json\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\.nuget\packages\system.text.json\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\.nuget\packages\system.text.json\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\microsoft.netcore.app
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\microsoft.netcore.app
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\microsoft.netcore.app
+++cloudscribe.Web.Pagination (6.0.0)
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>1191
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1216
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1196
+++Microsoft.EntityFrameworkCore.Design (8.0.0-preview.1.23111.4)
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>1189
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1214
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1194
+++Microsoft.EntityFrameworkCore.SqlServer (8.0.0-preview.1.23111.4)
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>1188
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1213
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1192
+++Microsoft.EntityFrameworkCore.Tools (8.0.0-preview.1.23111.4)
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>1193
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1217
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1197
+++X.PagedList.Mvc.Core (8.4.7)
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:>1195
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1218
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1198
+++ciplatform.repository
+i:{00000000-0000-0000-0000-000000000000}:ciplatform.repository
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\bin\debug\net6.0\ciplatform.repository.dll
+++Interface
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\
+++IAdminInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\iadmininterface.cs
+++ILandingPageInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\ilandingpageinterface.cs
+++IStoryListingInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\istorylistinginterface.cs
+++ITimeSheetInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\itimesheetinterface.cs
+++IUserInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\iuserinterface.cs
+++IVolunteerMissionInterface.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\interface\ivolunteermissioninterface.cs
+++Repository
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\
+++AdminRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\adminrepository.cs
+++LandingPageRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\landingpagerepository.cs
+++StoryListingRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\storylistingrepository.cs
+++TimeSheetRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\timesheetrepository.cs
+++UserRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\userrepository.cs
+++VolunteerMissionRepository.cs
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.repository\repository\volunteermissionrepository.cs
+++Projects
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:projects
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:projects
+++Microsoft.AspNetCore.Authorization (7.0.3)
+i:{ad3eea43-5da1-4360-b2e2-2f8e9ff32fef}:>1215
+++CI PLATFORM
+i:{00000000-0000-0000-0000-000000000000}:CI PLATFORM
+++Connected Services 
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1159
+++Properties
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\properties\
+++wwwroot
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\
+++css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\
+++documents
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\
+++images
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\
+++js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\
+++conditions.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\conditions.js
+++ContactUs.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\contactus.js
+++landing.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\landing.js
+++MissionPageForAdmin.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\missionpageforadmin.js
+++site.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\site.js
+++story.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\story.js
+++storydetails.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\storydetails.js
+++storySearchAndPagination.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\storysearchandpagination.js
+++timesheet.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\timesheet.js
+++Userdetails.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\userdetails.js
+++UserPageForAdmin.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\userpageforadmin.js
+++lib
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\
+++storyimages
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\
+++favicon.ico
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\favicon.ico
+++Controllers
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\
+++AdminController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\admincontroller.cs
+++HomeController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\homecontroller.cs
+++LandingPageController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\landingpagecontroller.cs
+++LostpassController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\lostpasscontroller.cs
+++StoryListingController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\storylistingcontroller.cs
+++TimeSheetController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\timesheetcontroller.cs
+++UserController.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\controllers\usercontroller.cs
+++Views
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\
+++Admin
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\admin\
+++AdminPage.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\admin\adminpage.cshtml
+++Home
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\home\
+++LandingPage
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\landingpage\
+++landingpage.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\landingpage\landingpage.cshtml
+++VolunteeringMission.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\landingpage\volunteeringmission.cshtml
+++Lostpass
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\lostpass\
+++Shared
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\
+++_adminMissionPage.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_adminmissionpage.cshtml
+++_adminUserPage.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_adminuserpage.cshtml
+++_cifooter.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_cifooter.cshtml
+++_header.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_header.cshtml
+++_Layout.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_layout.cshtml
+++_searchfilterheader.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_searchfilterheader.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\error.cshtml
+++StoryListing
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\storylisting\
+++shareyourstory.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\storylisting\shareyourstory.cshtml
+++storydetail.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\storylisting\storydetail.cshtml
+++storylisting.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\storylisting\storylisting.cshtml
+++TimeSheet
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\timesheet\
+++volunteertimesheet.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\timesheet\volunteertimesheet.cshtml
+++User
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\user\
+++_ViewImports.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\_viewstart.cshtml
+++appsettings.json
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\appsettings.json
+++CiContext.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\cicontext.cs
+++Program.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\program.cs
+++No service dependencies discovered
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:>1160
+++launchSettings.json
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\properties\launchsettings.json
+++admin.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\admin.css
+++AdminUserPage.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\adminuserpage.css
+++landing.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\landing.css
+++PageNotFound.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\pagenotfound.css
+++PrivacyPolicy.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\privacypolicy.css
+++site.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\site.css
+++story.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\story.css
+++storydetail.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\storydetail.css
+++style.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\style.css
+++timesheet.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\timesheet.css
+++userdetails.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\css\userdetails.css
+++1cb7e124-53b3-41fe-ba54-d4c7d38efe11.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\1cb7e124-53b3-41fe-ba54-d4c7d38efe11.png
+++57ea5b51-db72-4c42-be88-a7661f07a97e.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\57ea5b51-db72-4c42-be88-a7661f07a97e.png
+++5f8256b2-3236-49ab-8cf6-811ca678221d.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\5f8256b2-3236-49ab-8cf6-811ca678221d.png
+++6b4068d1-3907-42ea-a902-517819f92d61.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\6b4068d1-3907-42ea-a902-517819f92d61.png
+++88b2cf09-e7d4-4330-a17a-ab81311ac12e.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\88b2cf09-e7d4-4330-a17a-ab81311ac12e.png
+++91c7c91c-059b-40ea-b0cb-d94c7bc43ad9.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\91c7c91c-059b-40ea-b0cb-d94c7bc43ad9.png
+++a5928ead-3b42-4f70-af5b-37e357fd0cbd.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\a5928ead-3b42-4f70-af5b-37e357fd0cbd.png
+++d935a7d8-067e-4149-951b-df562c8b2462.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\d935a7d8-067e-4149-951b-df562c8b2462.png
+++docx-lorem-ipsum.docx
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\docx-lorem-ipsum.docx
+++e711fa5d-f533-4191-b929-d0bba918066a.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\e711fa5d-f533-4191-b929-d0bba918066a.png
+++pdf-Lorem_ipsum.pdf
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\pdf-lorem_ipsum.pdf
+++xlsx-lorem-ipsum.xlsx
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\documents\xlsx-lorem-ipsum.xlsx
+++082bb1f7-02b1-4a3d-bf0e-6f2c390fc2e7.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\082bb1f7-02b1-4a3d-bf0e-6f2c390fc2e7.png
+++404-Page-image.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\404-page-image.png
+++achieved.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\achieved.png
+++add.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\add.png
+++add1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\add1.png
+++Already-volunteered.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\already-volunteered.png
+++Animal-welfare-_-save-birds-campaign.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\animal-welfare-_-save-birds-campaign.png
+++Animal-welfare-_-save-birds-campaign-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\animal-welfare-_-save-birds-campaign-1.png
+++arrow.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\arrow.png
+++Assets.zip
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\assets.zip
+++bell.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\bell.png
+++bell-big.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\bell-big.png
+++bin.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\bin.png
+++calender.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\calender.png
+++cancel.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\cancel.png
+++cancel1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\cancel1.png
+++CES.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\ces.png
+++checked.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\checked.png
+++cross.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\cross.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-2.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-3.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-4.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-5.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\csr-initiative-stands-for-coffee--and-farmer-equity-6.png
+++deadline.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\deadline.png
+++doc.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\doc.png
+++down.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\down.png
+++drag-and-drop.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\drag-and-drop.png
+++drop-down.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\drop-down.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\education-supplies-for-every--pair-of-shoes-sold.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\education-supplies-for-every--pair-of-shoes-sold-1.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\education-supplies-for-every--pair-of-shoes-sold-2.png
+++eye.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\eye.png
+++facebook.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\facebook.png
+++filter.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\filter.png
+++gift.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\gift.png
+++graph.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\graph.png
+++grid.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grid.png
+++Grow-Trees-On-the-path-to-environment-sustainability.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability.png
+++Grow-Trees-On-the-path-to-environment-sustainability-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-1.png
+++Grow-Trees-On-the-path-to-environment-sustainability-2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-2.png
+++Grow-Trees-On-the-path-to-environment-sustainability-3.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-3.png
+++Grow-Trees-On-the-path-to-environment-sustainability-4.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-4.png
+++Grow-Trees-On-the-path-to-environment-sustainability-5.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-5.png
+++Grow-Trees-On-the-path-to-environment-sustainability-login.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\grow-trees-on-the-path-to-environment-sustainability-login.png
+++heart.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\heart.png
+++heart1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\heart1.png
+++heart2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\heart2.png
+++hours.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\hours.png
+++image.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\image.png
+++image1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\image1.png
+++image2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\image2.png
+++img.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img.png
+++img1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img1.png
+++img11.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img11.png
+++img2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img2.png
+++img22.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img22.png
+++img3.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img3.png
+++img33.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\img33.png
+++info.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\info.png
+++left.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\left.png
+++left1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\left1.png
+++linkedin.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\linkedin.png
+++list.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\list.png
+++logo.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\logo.png
+++mission.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\mission.png
+++my-story.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\my-story.png
+++new-message.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\new-message.png
+++next.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\next.png
+++Nourish-the-Children-in--African-country.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\nourish-the-children-in--african-country.png
+++Nourish-the-Children-in--African-country-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\nourish-the-children-in--african-country-1.png
+++Open-Volunteering-Requests.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\open-volunteering-requests.png
+++organization.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\organization.png
+++pdf.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\pdf.png
+++pin.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\pin.png
+++pin1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\pin1.png
+++Plantation-and-Afforestation-programme.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\plantation-and-afforestation-programme.png
+++Plantation-and-Afforestation-programme-1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\plantation-and-afforestation-programme-1.png
+++previous.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\previous.png
+++red-heart (1).png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\red-heart (1).png
+++red-heart.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\red-heart.png
+++red-heart1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\red-heart1.png
+++right.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right.png
+++right-arrow.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right-arrow.png
+++right-arrow1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right-arrow1.png
+++right-arrow2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right-arrow2.png
+++right-arrow-b.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right-arrow-b.png
+++right-white.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\right-white.png
+++search.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\search.png
+++Seats-left.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\seats-left.png
+++selected-star.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\selected-star.png
+++settings.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\settings.png
+++star.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\star.png
+++star-empty.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\star-empty.png
+++Thumbs.db
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\thumbs.db
+++twitter.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\twitter.png
+++up.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\up.png
+++user.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\user.png
+++user1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\user1.png
+++user-img.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\user-img.png
+++user-img-large.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\user-img-large.png
+++volunteer1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer1.png
+++volunteer2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer2.png
+++volunteer3.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer3.png
+++volunteer4.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer4.png
+++volunteer5.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer5.png
+++volunteer6.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer6.png
+++volunteer7.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer7.png
+++volunteer8.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer8.png
+++volunteer9.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteer9.png
+++Volunteering-Rank.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\volunteering-rank.png
+++Voted-Missions.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\voted-missions.png
+++web.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\web.png
+++xlsx.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\images\xlsx.png
+++bootstrap
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\
+++jquery
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\
+++jquery-validation
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation-unobtrusive\
+++068867c2-7638-480b-af34-ded7df11af78.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\068867c2-7638-480b-af34-ded7df11af78.png
+++082a3781-62e6-4d29-b2bb-11ab49408ac2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\082a3781-62e6-4d29-b2bb-11ab49408ac2.png
+++12f0bd04-4416-4932-93f9-c7e022c841f8.PNG
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\12f0bd04-4416-4932-93f9-c7e022c841f8.png
+++1fd4e874-f1d5-4e49-9196-8e6a0ce35b2a.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\1fd4e874-f1d5-4e49-9196-8e6a0ce35b2a.png
+++2212e46a-988b-4975-b2bb-58a3177a974e.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\2212e46a-988b-4975-b2bb-58a3177a974e.png
+++27e02aa8-d968-4181-9bf4-5f1acac0756a.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\27e02aa8-d968-4181-9bf4-5f1acac0756a.png
+++30abb846-7d88-43ac-9082-e9ff720d00de.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\30abb846-7d88-43ac-9082-e9ff720d00de.png
+++34830118-4ceb-4814-a576-cab5c512491b.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\34830118-4ceb-4814-a576-cab5c512491b.png
+++399b3259-d0ab-45a1-bec6-ad9d5348fcb1.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\399b3259-d0ab-45a1-bec6-ad9d5348fcb1.png
+++4706a498-56a8-4730-90fb-3e856d787c9a.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\4706a498-56a8-4730-90fb-3e856d787c9a.png
+++4a1a1346-63bb-4248-b264-9d124fd48a25.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\4a1a1346-63bb-4248-b264-9d124fd48a25.png
+++4d139dad-05ae-418f-9d48-c8e85b98a85f.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\4d139dad-05ae-418f-9d48-c8e85b98a85f.png
+++59f7d0a0-b30e-4919-acf7-9454ba7169fd.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\59f7d0a0-b30e-4919-acf7-9454ba7169fd.png
+++72659214-90eb-4e27-8ada-5542069748a4.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\72659214-90eb-4e27-8ada-5542069748a4.png
+++7ac8aca3-5c66-4730-9054-7b89035efe42.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\7ac8aca3-5c66-4730-9054-7b89035efe42.png
+++7e0d0ff0-d4e8-4c95-a995-356eb8adeb5b.PNG
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\7e0d0ff0-d4e8-4c95-a995-356eb8adeb5b.png
+++85c063bd-5c79-44d7-9532-acf7064aa0bb.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\85c063bd-5c79-44d7-9532-acf7064aa0bb.png
+++8c2d1df0-76da-44cc-bfc4-2d7418ecc0e8.PNG
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\8c2d1df0-76da-44cc-bfc4-2d7418ecc0e8.png
+++95618c3f-0bba-4558-9848-1d94738225e4.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\95618c3f-0bba-4558-9848-1d94738225e4.png
+++9c70ef51-a4e7-4d53-8115-33b1cdaf04dc.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\9c70ef51-a4e7-4d53-8115-33b1cdaf04dc.png
+++9ee98ba1-dc4b-4881-b965-f31e2ce69fd2.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\9ee98ba1-dc4b-4881-b965-f31e2ce69fd2.png
+++ac4b54b5-7621-47cd-bc69-3d9c81c7cd4b.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\ac4b54b5-7621-47cd-bc69-3d9c81c7cd4b.png
+++b49c9111-5e49-4aa8-93b9-3c3c3b9af8c8.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\b49c9111-5e49-4aa8-93b9-3c3c3b9af8c8.png
+++b85d1410-87cc-429a-b94e-3ab816864768.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\b85d1410-87cc-429a-b94e-3ab816864768.png
+++b9854e17-4d1f-4f82-aa2f-37b3a7b9cfd3.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\b9854e17-4d1f-4f82-aa2f-37b3a7b9cfd3.png
+++bad43439-a317-4e3c-a77a-5e350b141944.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\bad43439-a317-4e3c-a77a-5e350b141944.png
+++bbc9b9a9-ef82-49fb-b067-d9bf07f0da72.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\bbc9b9a9-ef82-49fb-b067-d9bf07f0da72.png
+++bc8f7bf2-89ef-4822-a40d-72deb20fc368.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\bc8f7bf2-89ef-4822-a40d-72deb20fc368.png
+++be8be19b-32d5-45a4-85ec-a914fd7fb430.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\be8be19b-32d5-45a4-85ec-a914fd7fb430.png
+++c4c20102-58d1-47ff-b8e7-c06280fa95fa.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\c4c20102-58d1-47ff-b8e7-c06280fa95fa.png
+++cb7d7d2c-4f0f-4592-a55c-439ad6663c78.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\cb7d7d2c-4f0f-4592-a55c-439ad6663c78.png
+++d3833f8e-e9ff-4dc5-a10c-9c4e02836c49.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\d3833f8e-e9ff-4dc5-a10c-9c4e02836c49.png
+++dac2a0af-0a0e-47d6-ac88-c26cfd417d22.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\dac2a0af-0a0e-47d6-ac88-c26cfd417d22.png
+++f7347efc-609f-42a2-9504-6da16f8ff89f.png
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\storyimages\f7347efc-609f-42a2-9504-6da16f8ff89f.png
+++ErrorViewModel.cs
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\models\errorviewmodel.cs
+++PageNotFound.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\home\pagenotfound.cshtml
+++PrivacyPolicy.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\home\privacypolicy.cshtml
+++lostpas.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\lostpass\lostpas.cshtml
+++resetpass.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\lostpass\resetpass.cshtml
+++_Layout.cshtml.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_layout.cshtml.css
+++Index.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\user\index.cshtml
+++register.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\user\register.cshtml
+++Userdetails.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\user\userdetails.cshtml
+++appsettings.Development.json
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\microsoft.aspnetcore.app
+++dist
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\dist\
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\license.txt
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++MissionApplicationForAdminViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\missionapplicationforadminviewmodel.cs
+++_adminMissionapplication.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_adminmissionapplication.cshtml
+++MissionApplicationPageForAdmin.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\missionapplicationpageforadmin.js
+++_adminStoryPage.cshtml
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\views\shared\_adminstorypage.cshtml
+++StoryPageForAdminViewModel.cs
+i:{48d926a2-6194-41e9-bb29-a6d4510bf0f8}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ciplatform.entities\viewmodels\storypageforadminviewmodel.cs
+++MissionApplicationPageForAdmin - Copy.js
+++StoryPageForAdmin - Copy.js
+++StoryPageForAdmin.js
+i:{495ce84c-46f8-4078-9b24-0e0567fb291f}:c:\users\pci139\desktop\tatvasoft\project\ci platform\mvc\ci platform\ci platform\wwwroot\js\storypageforadmin.js
