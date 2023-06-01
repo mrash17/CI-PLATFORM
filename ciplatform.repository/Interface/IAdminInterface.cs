@@ -67,6 +67,7 @@ namespace ciplatform.repository.Interface
         public void EditCMS(CMSPageForAdminViewModel cmsPageForAdminViewModel);
         public void AddCMS(CMSPageForAdminViewModel cmsPageForAdminViewModel);
         public int RemoveCMS(int cmsId);
+        public int removeCheckedcms(List<int> checkedCmsValues);
 
     }
 }
