@@ -112,5 +112,11 @@ namespace CI_PLATFORM.Controllers
             return users;
 
         }
+
+
+        public IActionResult MapApi()
+        {
+            return View();
+        }
     }
 }

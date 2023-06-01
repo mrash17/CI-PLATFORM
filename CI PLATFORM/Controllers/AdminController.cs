@@ -622,5 +622,12 @@ namespace CI_PLATFORM.Controllers
             var dCMS = _iAdminInterface.RemoveCMS(cmsId);
             return PartialView("_adminCMSPage");
         }
+
+       public IActionResult RemoveSelectedCms(List<int> checkedCmsValues)
+        {
+            var dCheckedCms = _iAdminInterface.removeCheckedcms(checkedCmsValues);
+            return PartialView("_adminCMSPage");
+
+        }
     }
 }
