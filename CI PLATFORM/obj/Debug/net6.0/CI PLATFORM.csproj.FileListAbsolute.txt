@@ -282,3 +282,15 @@ C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\CI PLATF
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\CI PLATFORM\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\CI PLATFORM\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\CI PLATFORM\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.csproj.AssemblyReference.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.AssemblyInfoInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.AssemblyInfo.cs
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.csproj.CoreCompileInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.RazorAssemblyInfo.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.RazorAssemblyInfo.cs
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.dll
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\ref\CI PLATFORM.dll
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\CI PLATFORM\obj\Debug\net6.0\CI PLATFORM.pdb

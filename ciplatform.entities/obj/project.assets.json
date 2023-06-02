@@ -4792,11 +4792,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\Project\\CI PLATFORM\\MVC\\CI PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
+      "projectUniqueName": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\CI-PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
       "projectName": "ciplatform.entities",
-      "projectPath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\Project\\CI PLATFORM\\MVC\\CI PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
+      "projectPath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\CI-PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
       "packagesPath": "C:\\Users\\pci139\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\Project\\CI PLATFORM\\MVC\\CI PLATFORM\\ciplatform.entities\\obj\\",
+      "outputPath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\CI-PLATFORM\\ciplatform.entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

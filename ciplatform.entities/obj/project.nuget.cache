@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lx2t0/cKVnmTRkXgxUPcXWe1IW3097jpFV6o1znpBCtH7KpKGJwLefY1YlDc0ft/UAh9jJcNz+V9R1J1NRrIzQ==",
+  "dgSpecHash": "T+lNVScJtPZnMuh55XFJ7+OHQy6ANOybzbeInLnJud1FCqN/38xMmmp46UEhtcsbI5qVKctYXl0C66rK7x0OiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\Project\\CI PLATFORM\\MVC\\CI PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
+  "projectFilePath": "C:\\Users\\pci139\\Desktop\\CI PLATFORM\\CI-PLATFORM\\ciplatform.entities\\ciplatform.entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pci139\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\pci139\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -66,7 +66,7 @@
     "C:\\Users\\pci139\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\pci139\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\pci139\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\pci139\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",

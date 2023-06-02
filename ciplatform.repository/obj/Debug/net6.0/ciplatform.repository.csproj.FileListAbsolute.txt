@@ -32,3 +32,11 @@ C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatfo
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.repository\obj\Debug\net6.0\ref\ciplatform.repository.dll
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.pdb
 C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.genruntimeconfig.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.csproj.AssemblyReference.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.AssemblyInfoInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.AssemblyInfo.cs
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.csproj.CoreCompileInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.dll
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ref\ciplatform.repository.dll
+C:\Users\pci139\Desktop\CI PLATFORM\CI-PLATFORM\ciplatform.repository\obj\Debug\net6.0\ciplatform.repository.pdb
