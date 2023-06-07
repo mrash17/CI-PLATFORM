@@ -2,6 +2,8 @@
 using ciplatform.repository.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace CI_PLATFORM.Controllers
 {
@@ -19,12 +21,12 @@ namespace CI_PLATFORM.Controllers
         {
             return View();
         }
-        
+
 
 
         //User
         [Authorize(Roles = "Admin")]
-        public IActionResult UserPage(string searchkeyword="",int pageIndex=1)
+        public IActionResult UserPage(string searchkeyword = "", int pageIndex = 1)
         {
             /*var adminid = HttpContext.Session.GetString("sessionAdminid");
 
@@ -38,11 +40,11 @@ namespace CI_PLATFORM.Controllers
                 return RedirectToAction("Index", "User");
 
             }*/
-             
-           
-            var userList = _iAdminInterface.getUsers(searchkeyword,pageIndex);
 
-            return PartialView("_adminUserPage",userList);
+
+            var userList = _iAdminInterface.getUsers(searchkeyword, pageIndex);
+
+            return PartialView("_adminUserPage", userList);
         }
         public IActionResult AccessDenied()
         {
@@ -53,7 +55,7 @@ namespace CI_PLATFORM.Controllers
         {
 
             var dUser = _iAdminInterface.RemoveUser(int.Parse(userid));
-            return PartialView("_adminUserPa    ge");
+            return PartialView("_adminUserPage");
         }
         public IActionResult addUser()
         {
@@ -74,14 +76,14 @@ namespace CI_PLATFORM.Controllers
 
         }
         [HttpPost]
-        public IActionResult addUser(UserPageForAdminViewModel AdduserPageForAdminView,IFormFileCollection formFilesImg)
+        public IActionResult addUser(UserPageForAdminViewModel AdduserPageForAdminView, IFormFileCollection formFilesImg)
         {
-            if(AdduserPageForAdminView.UserId == 0)
+            if (AdduserPageForAdminView.UserId == 0)
             {
-               var emailchk= _iAdminInterface.AddUser(AdduserPageForAdminView, formFilesImg);
+                var emailchk = _iAdminInterface.AddUser(AdduserPageForAdminView, formFilesImg);
                 if (emailchk == 1)
                     TempData["UserAdded"] = "User Added successfully";
-                else if(emailchk == 0)
+                else if (emailchk == 0)
                 {
                     TempData["UserEdited"] = "Email id Already Exsites";
                     return PartialView("_adminAddUser", AdduserPageForAdminView);
@@ -197,9 +199,9 @@ namespace CI_PLATFORM.Controllers
             var MissionApplicationList = _iAdminInterface.getApplicationsOfMission(searchkeyword, pageIndex);
             return PartialView("_adminMissionapplication", MissionApplicationList);
         }
-        public IActionResult ApprovalMissionApplicationByAdmin(int MissionApplicationId,string approvalstatus)
+        public IActionResult ApprovalMissionApplicationByAdmin(int MissionApplicationId, string approvalstatus)
         {
-             _iAdminInterface.ChangeApplicationStatus(MissionApplicationId, approvalstatus);
+            _iAdminInterface.ChangeApplicationStatus(MissionApplicationId, approvalstatus);
             return PartialView("_adminMissionapplication");
         }
 
@@ -222,6 +224,31 @@ namespace CI_PLATFORM.Controllers
 
             var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex);
             return PartialView("_adminStoryPage", StoriesList);
+        }
+        public IActionResult StoryStats(string searchkeyword = "", int pageIndex = 1)
+        {
+            var adminid = HttpContext.Session.GetString("sessionAdminid");
+
+            var userid = HttpContext.Session.GetString("sessionuserid");
+
+            if (userid != null)
+            {
+                return RedirectToAction("PageNotFound", "Home");
+            }
+            else if (adminid == null)
+            {
+                return RedirectToAction("Index", "User");
+
+            }
+
+            var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex);
+            return PartialView("_statistics", StoriesList);
+        }
+
+        public JsonResult storyStatsList()
+        {
+            var StoriesList = _iAdminInterface.getStories("", 1);
+            return Json(StoriesList);   
         }
         public IActionResult ApprovalStoryByAdmin(int StoryId, int approvalstatus)
         {
@@ -260,7 +287,7 @@ namespace CI_PLATFORM.Controllers
         {
             var dTheme = _iAdminInterface.RemoveTheme(ThemeId);
             // 0 means missiona and present with asked theme
-            if(dTheme == 0)
+            if (dTheme == 0)
             {
                 return PartialView("_adminThemePage", dTheme);
 
@@ -286,7 +313,7 @@ namespace CI_PLATFORM.Controllers
                 return RedirectToAction("Index", "User");
 
             }
-            if(themeid == 0 )
+            if (themeid == 0)
             {
                 return PartialView("_adminAddTheme");
 
@@ -413,7 +440,7 @@ namespace CI_PLATFORM.Controllers
                     TempData["SkillEdited"] = "Skill Edited successfully";
 
                 }
-                if(skill_chk == 3)
+                if (skill_chk == 3)
                 {
                     TempData["NoChangesDone"] = "No Changes done";
 
@@ -506,12 +533,12 @@ namespace CI_PLATFORM.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEditBanner(BannerPageForAdminViewModel bannerPageForAdminView,IFormFileCollection IFormImg)
+        public IActionResult AddEditBanner(BannerPageForAdminViewModel bannerPageForAdminView, IFormFileCollection IFormImg)
         {
             if (bannerPageForAdminView.BannerId != 0)
             {
                 _iAdminInterface.EditBanner(bannerPageForAdminView, IFormImg);
-               
+
                 TempData["SkillEdited"] = "Banner Edited successfully";
 
                 return RedirectToAction("BannerPage");
@@ -520,11 +547,11 @@ namespace CI_PLATFORM.Controllers
             }
             else
             {
-                 _iAdminInterface.AddBanner(bannerPageForAdminView, IFormImg);
-               
-                    TempData["SkillEdited"] = "Banner Added successfully";
-                    return RedirectToAction("BannerPage");
-              
+                _iAdminInterface.AddBanner(bannerPageForAdminView, IFormImg);
+
+                TempData["SkillEdited"] = "Banner Added successfully";
+                return RedirectToAction("BannerPage");
+
             }
 
         }
@@ -575,30 +602,57 @@ namespace CI_PLATFORM.Controllers
         [HttpPost]
         public IActionResult AddEditCMS(CMSPageForAdminViewModel cmsPageForAdminViewModel)
         {
+            cmsPagePost(cmsPageForAdminViewModel);
+
             if (cmsPageForAdminViewModel.CmsPageId != 0)
             {
-                _iAdminInterface.EditCMS(cmsPageForAdminViewModel);
 
                 TempData["SkillEdited"] = "CMS Edited successfully";
-
-                return RedirectToAction("CMSPage");
-
-
             }
             else
             {
-                _iAdminInterface.AddCMS(cmsPageForAdminViewModel);
-
                 TempData["SkillEdited"] = "CMS Added successfully";
-                return RedirectToAction("CMSPage");
-
             }
+            return RedirectToAction("CMSPage");
+
+
 
         }
+
+        private static void cmsPagePost(CMSPageForAdminViewModel cmsPageForAdminViewModel)
+        {
+            string apiUrl = "https://localhost:44381/api/CustomAPI/AddEditCms";
+
+            HttpClient client = new HttpClient();
+
+            //Converting data into json for passing it
+            string userJson = JsonConvert.SerializeObject(cmsPageForAdminViewModel);
+            //To convert userJon to httpcontent
+            HttpContent content = new StringContent(userJson, Encoding.UTF8, "application/json");
+            // Post Request to API
+            HttpResponseMessage response = client.PostAsync(apiUrl, content).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("CMS added successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Error adding user: " + response.ReasonPhrase);
+            }
+        }
+
         public IActionResult RemoveCMSByAdmin(int cmsId)
         {
             var dCMS = _iAdminInterface.RemoveCMS(cmsId);
             return PartialView("_adminCMSPage");
+        }
+
+       public IActionResult RemoveSelectedCms(List<int> checkedCmsValues)
+        {
+            var dCheckedCms = _iAdminInterface.removeCheckedcms(checkedCmsValues);
+            return PartialView("_adminCMSPage");
+
         }
     }
 }

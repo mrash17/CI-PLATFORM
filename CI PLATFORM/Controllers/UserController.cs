@@ -190,8 +190,8 @@ namespace CI_PLATFORM.Controllers
         public JsonResult GetUserData()
         {
             var userid = HttpContext.Session.GetString("sessionuserid");
-           
 
+            userid = "44";
             var userdetails = _iuserInterface.Getuserdata(userid);
             return Json(userdetails);
             
@@ -270,6 +270,12 @@ namespace CI_PLATFORM.Controllers
             var userid = HttpContext.Session.GetString("sessionuserid");
             var notifications = _iuserInterface.getnotification(userid);
             return Json(notifications);
+        }
+
+        public JsonResult GetAllApplications()
+        {
+            var applications = _Cidbcontext.MissionApplications.Where(m => m.ApprovalStatus == "approved" ).GroupBy(m=>m.MissionId);
+            return Json(applications);
         }
     }
 
