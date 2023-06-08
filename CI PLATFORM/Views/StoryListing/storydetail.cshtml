@@ -1,0 +1,226 @@
+﻿@model ciplatform.entities.ViewModels.StoryDetailViewModel
+@inject IHttpContextAccessor Accessor
+
+@{
+         var userid= @Accessor.HttpContext.Session.GetString("sessionuserid");
+
+}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="~/css/storydetail.css">
+        <link rel="stylesheet" href="~/css/landing.css">
+
+    <title>Story Details</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="col-md-1 col-0 "></div>
+
+        <!--Main Navigation-->
+        <div class="col-md-10 col-12">
+               <header>
+                    <partial name="_header"/>
+               </header>
+
+            <div class="row mt-2">
+                    <div class="col-lg-6">
+                        <div class="main">
+                            <div class="slider slider-for">
+                                <div><img src="~/images//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png"
+                                        class="w-100 imgheight" alt="" srcset=""></div>
+                                <div><img src="~/images//Grow-Trees-On-the-path-to-environment-sustainability.png"
+                                        class="w-100 imgheight" alt="" srcset=""></div>
+                                <div><img src="~/images//img2.png" class="w-100 imgheight" alt="" srcset=""></div>
+                                <div><img src="~/images//img22.png" class="w-100 imgheight" alt="" srcset=""></div>
+                                <div><img src="~/images//CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png "
+                                        class="w-100 imgheight" alt="" srcset=""></div>
+                                <div><img src="~/images//Grow-Trees-On-the-path-to-environment-sustainability.png "
+                                        class="w-100 imgheight" alt="" srcset=""></div>
+                            </div>
+                            <div class="slider slider-nav w-100">
+                                <div><img src="~/images//CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png" class="w-100"
+                                        alt="" srcset=""></div>
+                                <div><img src="~/images//Grow-Trees-On-the-path-to-environment-sustainability-4.png"
+                                        class="w-100" alt="" srcset=""></div>
+                                <div><img src="~/images//img2.png" alt="" class="w-100" srcset=""></div>
+                                <div><img src="~/images//img22.png" alt="" class="w-100" srcset=""></div>
+                                <div><img src="~/images//CSR-initiative-stands-for-Coffee--and-Farmer-Equity-5.png" class="w-100"
+                                        alt="" srcset=""></div>
+                                <div><img src="~/images//Grow-Trees-On-the-path-to-environment-sustainability-4.png"
+                                        class="w-100" alt="" srcset=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 ps-3">
+
+                        <div class="d-flex flex-column mt-2 profile-icon">
+
+                            <img src="@Model.Avatar" class="rounded-circle image mt-2" alt="">
+                            <div class="d-flex mt-2 ms-2 justify-content-between">
+                                <p>@Model.FirstName @Model.SecondName</p>
+
+                                <div class="rounded-pill border px-2 py-1" style="margin-top: -42px;height: 36px;"><img src="~/images//eye.png" class="eye"
+                                        alt="">&nbsp; @Model.Viewcount  Views</div>
+                            </div>    
+
+                        </div>
+                        <div class="mt-4">
+                            @{
+                            var media =@Model.Media.Where(m => m.Type == "videourl").FirstOrDefault();
+                      }
+                            <p>
+
+                                         @Html.Raw(Model.WhyIVolunteer)
+                             </p>
+                            @if (@media != null)
+                            {
+                               <p style="font:20px bolder"> Video url : <a href = "@media.Path" > Click here </a></p>
+                            }
+                            
+                             
+                        </div>
+                        <div class="d-flex favbtn mt-4 justify-content-between">
+                            <label class="favouritediv" style="width:100%">
+
+                            @if(userid==null)
+                            {
+                             <a style="width:95%" class="btn btn-rounded px-2 favourite apply" onclick="notloggedin()"><img src="~/images//add1.png" alt=""> Recommend to a
+                                Co-worker</a> 
+                            }
+                            else
+                            {
+                                <a style="width:95%" class="btn btn-rounded px-2 favourite apply" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-show-users"><img src="~/images//add1.png" alt=""> Recommend to a
+                                Co-worker</a> 
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Recommend to a Co-Worker</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="sendmail">Send mail</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            }
+                              </label>
+
+                             <a class="btn btn-rounded px-2 apply" asp-action="VolunteeringMission" asp-controller="LandingPage" asp-route-mid="@Model.MissionId"style="width:100%;" alt=""> Open Mission <img src="~/images//right-arrow.png" /></a>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="container-fluid mt-4">
+        <div class="col-md-12 para">
+
+            <div class="h5 position-relative border-bottom">
+               @Model.StoryTitle
+                <hr class="Border-black position-absolute">
+            </div>
+
+
+            <div>
+               @Html.Raw(Model.Description)
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-1 col-0"></div>
+</div>
+    
+    <partial name="_cifooter" />
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+       
+            function senduser()
+                {
+                    var selecteduserid = [];
+                    $('.modal-body input[type="checkbox"]:checked').each(function () {
+                     selecteduserid.push($(this).attr("id"));
+                    });
+                    console.log(selecteduserid);
+                    if(selecteduserid.length == 0){
+                     usernotselected();
+                    }
+                    else{
+                    
+                    $.ajax({
+                        type:"POST",
+                        //usersbyId for sending mail
+                        url: '/StoryListing/SendmailByUserid',
+                        data: {
+                            //ids is selected user's id
+                        ids: selecteduserid,
+                        storyid:@Model.StoryId,
+                        from_id:"@userid"
+                        },
+                        traditional: true,
+                        success: function(response) {
+                       console.log("Done");
+                        }
+                    });
+                     Sendmail();
+                    }
+                };
+               
+             $('#btn-show-users').click(function() {
+             
+
+                       //btn-show-users is id for gettign users
+                        $.ajax({
+                        url: '/LandingPage/getusers',
+                         data: {
+                          
+                        Userid:"@userid"
+                        },
+                        success: function(result) {
+                          $('.modal-body').empty();
+                        $.each(result, function(i, data) {
+                          
+                        $('.modal-body').append('<div class="form-check ms-3"><input class="form-check-input checkbox" type="checkbox" value="' + data.firstName 
+                        + " " + data.secondName + '" id=' + data.userId + '><label class="form-check-label" for=' + data.userId + '>' + data.firstName + " "+ data.secondName + '</label></div>')
+                        });
+                    
+                        }
+                        });
+                        //sendmail is id for sending the mail using senduser()
+                        $('#sendmail').click(function()
+                        {
+                        senduser();
+                        
+                        })
+
+                        });
+
+                   
+                    
+        </script>
+    
+  
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="~/js/storydetails.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>

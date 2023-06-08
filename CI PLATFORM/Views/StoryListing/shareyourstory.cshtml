@@ -1,0 +1,160 @@
+﻿@inject IHttpContextAccessor Accessor
+@model ciplatform.entities.ViewModels.StoryListingViewModel
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/story.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="~/images/logo.png" type="image/x-icon">
+            <link rel="stylesheet" href="~/css/landing.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Share Your Story</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="col-md-1 col-0"></div>
+
+        <!--Main Navigation-->
+        <div class="col-md-10 col-12">
+            <header>
+                <!-- Navbar -->
+                    <partial name="_header" />
+                </header>
+    <hr class="m-0">
+    <!--First Row Of Navbar is end-->
+    <!--Second row is all about static text start-->
+    <h1 style="font-weight:200" class="ps-3 mt-4">Share your story</h1>
+    <!--Second row is all about static text end-->
+    <!--Formsectioni start-->
+    <form asp-action="shareyourstory" asp-controller="StoryListing" enctype="multipart/form-data" method="post" name="shareyourstory">
+        <div class="row mx-2 mt-3">
+            <div class="col-md-4 mt-1">
+                <label for="inputEmail4">Select Mission</label>
+@*                           <input type="text" id="STORYID" asp-for="StoryId"/>
+*@
+                <select asp-for="StoryMissionId" class="form-control mt-1">
+                    @{
+                         <option id="0">Select Mission</option>
+                         
+                                foreach(var i in Model.missions)
+                                {
+                                  <option value="@i.MissionId" id="@i.MissionId">@i.Mission.Title</option>
+                                }
+                    }
+                </select>
+            </div>
+            <div class="col-md-4 mt-1">
+                <label for="inputEmail4">My Story Title</label>
+                <input type="text" asp-for="StoryTitle" id="StoryTitle" class="form-control mt-1" placeholder="Enter Story Title">
+                 @Html.ValidationMessageFor(model => model.StoryTitle,null, new{
+                    @class="text-danger",@style="text-size:1rem !important;"
+                    })
+            </div>  
+                  
+            <div class="col-md-4 mt-1">
+                <label for="inputEmail4">Date</label>
+                <input asp-for="StoryDate" type="date" id="PublishedAt" class="form-control mt-1" placeholder="">
+                 @Html.ValidationMessageFor(model => model.StoryDate,null, new{
+                                  @class="text-danger",@style="text-size:1rem !important;"
+                                   })
+            </div>
+           
+        </div>
+      
+        <div class="row mx-2 mt-3">
+            <div class="col-12 my-3">
+                <label for="inputEmail4">My Story</label>
+                <textarea id="storytext" asp-for="StoryDescription" placeholder="Enter your story..."></textarea>
+                 @Html.ValidationMessageFor(model => model.StoryDescription,null, new{
+                                  @class="text-danger",@style="text-size:1rem !important;"
+                                   })
+     
+
+            </div>
+            
+        </div>
+
+        <div class="row mx-2 mt-1">
+            <div class="col-12">
+                <label for="inputEmail4 ">Enter Video URL</label>
+                <input asp-for="VideoPath" id="VideoPath" class="form-control mt-1" id="videourl" type="text" placeholder="Enter video url">
+                 @Html.ValidationMessageFor(model => model.VideoPath,null, new{
+                                  @class="text-danger",@style="text-size:1rem !important;"
+                                   })
+            </div>
+            
+        </div>
+        <div class="row mx-2 mt-1">
+            <div class="col-12">
+                <div class="dzone w-100" id="drop-zone">
+                    <i class="bi bi-plus-lg" style="font-size: 50px;"></i>
+                    <span class="drop-text">Drag and drop images here or click to select</span>
+                    <input type="file" name="FileInput" id="file-input" multiple accept="image/*" style="display: none;">
+                </div>
+                 @*@Html.ValidationMessageFor(model => model.VideoPath,null, new{
+                                  @class="text-danger",@style="text-size:1rem !important;"
+                                   })*@
+
+                <div id="image-preview"></div>
+            </div>
+        </div>
+        <div class="row mx-2 mt-2">
+            <div class="col-12 d-flex justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-outline-warning" style="border-radius: 50px;">Cancel</button>
+                </div>
+                <div>
+                    <button class="btn btn-outline-warning me-2" style="border-radius: 50px;">Save</button>
+                    <button type="submit" class="btn btn-outline-warning" style="border-radius: 50px;">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+   <partial name="_cifooter" />
+    <!--footer end-->
+    </div>
+
+<div class="col-md-1 col-0"></div>
+            
+</div>
+
+    @section Scripts{
+            @{
+                <partial name="_ValidationScriptsPartial" />
+            }
+        }
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#storytext',
+            plugins: 'link image code',
+            toolbar: 'undo redo | bold italic | fontsizeselect | alignleft aligncenter alignright alignjustify | superscript subscript ',
+            height: 300
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="~/js/story.js"></script>
+    <a href="~/lib/jquery/dist/jquery.min.map"></a>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+</body>

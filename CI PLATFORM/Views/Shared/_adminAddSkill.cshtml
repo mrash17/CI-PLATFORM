@@ -1,0 +1,66 @@
+﻿@{
+Layout = "~/Views/Admin/AdminPage.cshtml";
+}
+<head>
+      <title>Add/Edit Skill Page</title>
+</head>
+ @model ciplatform.entities.ViewModels.SkillPageForAdminViewModel
+  @if (TempData["SkillNotEdited"] != null)
+            {
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+            <script type="text/javascript">
+            toastr.error('@TempData["SkillNotEdited"]');
+            </script>
+            } 
+<form asp-action="EditSkill" asp-controller="Admin" enctype="multipart/form-data" method="post">
+    <div>
+        <h3>Add/Edit Skill</h3>
+    </div>
+           <input type="text" class="form-control" hidden asp-for="Skillid" />
+    <div class="row d-flex mt-2">
+        <div class="col-md-6 col-lg-6 col-sm-12 mt-2">
+            <label>Skill Name</label>
+            <input type="text" class="form-control" asp-for="SkillTitle" />
+            @Html.ValidationMessageFor(model => model.SkillTitle,null, new{
+            @class="text-danger",@style="text-size:1rem !important;"
+            })
+        </div>
+
+        
+    </div>
+
+  
+  
+    <div class="row d-flex mt-2">
+                <div class="col-md-6 col-lg-6 col-sm-12 mt-2">
+
+        <label>Status</label>
+        <select id="Status" class="form-control" asp-for="Status">
+            <option value="1">Active</option>
+            <option value="2">In-Active</option>
+        </select>
+                </div>
+
+    </div>
+    
+              <div class="d-flex justify-content-start mt-2 mb-2">
+        
+        <a asp-action="SkillPage" asp-controller="Admin" class="btn border border-dark btn-outline-dark" style="border-radius:30px;width: 119px;">
+                Cancel
+            
+        </a>
+        <button type="submit" class="btn ms-2 btn-outline-warning" style="border-radius:30px;width: 119px;">
+            Save
+        </button>
+    </div>
+    
+</form>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "~/Views/Admin/AdminPage.cshtml";
+}
+@using X.PagedList
+@model IPagedList<ciplatform.entities.ViewModels.StoryPageForAdminViewModel>
+@*Using Simple Table tags*@
+
+@*<head>
+    <link rel="stylesheet" href="~/css/AdminUserPage.css">
+    <link rel="stylesheet"
+    type="text/css"
+    href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+    <title>Story Stats Page</title>
+
+    </head>
+    <body>
+    <!-- user page -->
+    <h4 class="mt-2 ms-3 border-bottom">Story Stats</h4>
+
+    <div>
+    <div class="table-responsive mt-2">
+    <table class="display overflow-tableEntry;" >
+    <thead style="background-color:#f8f9fc;">
+    <tr>
+
+    <th  >Story Title</th>
+
+    <th style="text-align:center;" scope="col">Number of Views</th>
+    </tr>
+    </thead>
+    <tbody class="userdetails" >
+
+    @{
+    if (Model != null)
+
+    {
+    foreach (var story in Model)
+    {
+    <tr>
+
+    <td ><span>@story.StoryTitle</span></td>
+
+    <td > @story.viewCount</td>
+
+    </tr>
+    }
+    }
+    }
+
+    </tbody>
+    </table>
+
+    </div>
+    <div id="chart_container"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript"
+    charset="utf8"
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript"
+    charset="utf8"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script src="~/js/StatisticsStory.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    </body>*@
+
+
+@*Using Data Table*@
+
+
+<head>
+    <link rel="stylesheet" href="~/css/AdminUserPage.css">
+
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" />
+</head>
+<body>
+    <h4 class="mt-2 ms-3 mb-2 border-bottom">Story Stats</h4>
+
+    <table id="table_id" class="display " style="width:100%">
+        <thead style="background-color:#f8f9fc;">
+            <tr>
+
+                <th>Story Title</th>
+                <th> Image</th>
+                <th>Number of Views</th>
+                <th> Action</th>
+            </tr>
+        </thead>
+        <tbody class="userdetails">
+            @{
+                if (Model != null)
+
+                {
+                    foreach (var story in Model)
+                    {
+                        <tr>
+
+                            <td><span>@story.StoryTitle</span></td>
+                            <td><img style="height:100px;width:150px" src="@story.Imgpath" /></td>
+                            <td> @story.viewCount</td>
+                            <td>
+                                <a asp-controller="StoryListing" asp-action="storydetail" asp-route-sid="@story.StoryId" class="rounded-pill btn btn-outline-warning ">View</a>
+                                <a class="btn iconuser" onclick="DeleteDataSwal(@story.StoryId)"><i class="bi bi-trash3 iconForDelete "></i></a>
+                                @if (@story.Status == 1) //accepted
+                                {
+                                    <a class="btn iconuser"><i class="bi bi-check-circle iconForcheck"></i></a>
+                                    <a class="btn iconuser" onclick="RejectStorySwal(@story.StoryId)"><i class="bi bi-x-circle iconForcross " style="color: black !important;"></i></a>
+                                }
+                                else if (@story.Status == 3) //rejected
+                                {
+                                    <a class="btn iconuser " onclick="ApproveStorySwal(@story.StoryId)"><i class="bi bi-check-circle iconForcheck " style="color: black !important;"></i></a>
+                                    <a class="btn iconuser"><i class="bi bi-x-circle iconForcross "></i></a>
+                                }
+                                else //pending
+                                {
+                                    <a class="btn iconuser" onclick="ApproveStorySwal(@story.StoryId)"><i class="bi bi-check-circle iconForcheck "></i></a>
+                                    <a class="btn iconuser" onclick="RejectStorySwal(@story.StoryId)"><i class="bi bi-x-circle iconForcross "></i></a>
+                                }
+                            </td>
+
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+    <div id="chart_container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="text/javascript"
+            charset="utf8"
+            src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript"
+            charset="utf8"
+            src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" defer></script>
+    <script src="~/js/StatisticsStory.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+            $(function() {
+              $("#table_id").dataTable({
+                "order" : [],
+                 'columnDefs': [ {
+                           'targets': [1,3], // column index (For which order by is not required)
+                           'orderable': false, // set orderable false for selected columns
+                     }],
+                language: {
+                    searchPlaceholder: "Search records"
+                }
+              });
+            });
+
+    </script>
+
+</body>

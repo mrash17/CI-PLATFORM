@@ -1,0 +1,219 @@
+﻿@{
+    Layout = "~/Views/Admin/AdminPage.cshtml";
+}
+@using X.PagedList
+@model IPagedList<ciplatform.entities.ViewModels.StoryPageForAdminViewModel>
+
+<head>
+    <link rel="stylesheet" href="~/css/AdminUserPage.css">
+    <title>Story Page</title>
+
+</head>
+<body>
+    <!-- user page -->
+    <h4 class="mt-2 ms-3 border-bottom">Story </h4>
+    <div style="margin-top: 2%;" class=" ms-2 d-flex justify-content-between">
+        <div class="col-6 position-relative" role="search">
+            <img src="~/images/search.png" alt="search-icon" style="margin-top:10px;" class="position-absolute ps-1">
+            <input class="form-control me-2 ps-5 pt-3 pb-3" id="search" type="text" style="height:70%;width:80%;" placeholder="Search"
+                   aria-label="Search">
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <button class="add btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Download
+            </button>
+
+
+            <!--Modal for download-->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Download options</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Select File Format
+                            <!--Radio Buttons-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="pdf" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    PDF
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" value="csv" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    CSV
+                                </label>
+                            </div>
+
+                            Want zip format?
+                            <!--Radio Buttons-->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="zipRadio" value="true" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="zipRadio" value="false" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" id="downloadBtn" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive mt-2">
+        <table class="table border overflow-tableEntry" id="storyTable">
+            <thead style="background-color:#f8f9fc;">
+                <tr>
+
+                    <th style=" padding-left: 30px;" scope="col">Story Title</th>
+
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Mission Title </th>
+
+                    <th style="text-align:center;" scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="userdetails">
+                @{
+                    if (Model != null)
+
+                    {
+                        foreach (var story in Model)
+                        {
+                            <tr>
+
+                                <td style="padding-left: 30px;"><span>@story.StoryTitle</span></td>
+
+
+                                <td>
+                                    <span>@story.UserName</span>
+                                </td>
+                                <td>
+
+                                    <span>@story.MissionTitle</span>
+
+                                </td>
+
+
+                                <td style="text-align:center;">
+                                    <a asp-controller="StoryListing" asp-action="storydetail" asp-route-sid="@story.StoryId" class="rounded-pill btn btn-outline-warning ">View</a>
+                                    <a class="btn iconuser" onclick="DeleteDataSwal(@story.StoryId)"><i class="bi bi-trash3 iconForDelete "></i></a>
+                                    @if (@story.Status == 1) //accepted
+                                    {
+                                        <a class="btn iconuser"><i class="bi bi-check-circle iconForcheck"></i></a>
+                                        <a class="btn iconuser" onclick="RejectStorySwal(@story.StoryId)"><i class="bi bi-x-circle iconForcross " style="color: black !important;"></i></a>
+                                    }
+                                    else if (@story.Status == 3) //rejected
+                                    {
+                                        <a class="btn iconuser " onclick="ApproveStorySwal(@story.StoryId)"><i class="bi bi-check-circle iconForcheck " style="color: black !important;"></i></a>
+                                        <a class="btn iconuser"><i class="bi bi-x-circle iconForcross "></i></a>
+                                    }
+                                    else //pending
+                                    {
+                                        <a class="btn iconuser" onclick="ApproveStorySwal(@story.StoryId)"><i class="bi bi-check-circle iconForcheck "></i></a>
+                                        <a class="btn iconuser" onclick="RejectStorySwal(@story.StoryId)"><i class="bi bi-x-circle iconForcross "></i></a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+
+            </tbody>
+        </table>
+        <div class="d-flex mt-5 justify-content-center Userpaged">
+            <ul class="pagination userpagination">
+                @{
+                    if (Model == null || Model.PageCount == 0)
+                    {
+                        <div class="text-center mt-3 mb-4">
+                            <p>No Story Found</p>
+
+                        </div>
+                    }
+                    else
+                    {
+                        @if (Model.PageCount > 1)
+                        {
+                            if (Model.HasPreviousPage)
+                            {
+                                <li class="page-item" style="cursor: pointer;">
+                                    <a class="page-link" aria-label="Previous" id="@Convert.ToInt32(@Model.PageNumber -1)">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="page-item" style="cursor: not-allowed; pointer-events: none; ">
+                                    <a class="page-link disabled" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                            }
+                            @for (int i = 1; i <= Model.PageCount; i++)
+                            {
+                                if (i == Model.PageNumber)
+                                {
+                                    <li class="page-item active" style="cursor: pointer;"><a style=" background-color: #F88634;border-color: #F88634;" class="page-link" id="@i">@i</a></li>
+                                }
+                                else
+                                {
+                                    <li class="page-item" id="page-link-hover" style="cursor: pointer; "><a class="page-link" id="@i">@i</a></li>
+                                }
+
+                            }
+
+                            @if (Model.HasNextPage)
+                            {
+                                <li class="page-item" style="cursor: pointer;"> <a class="page-link" aria-label="Next" id="@Convert.ToInt32(@Model.PageNumber +1)"><span aria-hidden="true">&raquo;</span></a></li>
+                            }
+                            else
+                            {
+                                <li class="page-item" style="cursor: not-allowed; pointer-events: none;"> <a class="page-link disabled" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                            }
+                        }
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    @*For js pdf*@
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+
+   @*For auto table function*@
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.4.4/jspdf.plugin.autotable.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+   <script src="https://unpkg.com/table2csv/dist/table2csv.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="~/js/StoryPageForAdmin.js"></script>
+    @*File save cdn for saving zip formats*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+       <script src="https://unpkg.com/table2csv/dist/table2csv.min.js"></script>
+
+</body>

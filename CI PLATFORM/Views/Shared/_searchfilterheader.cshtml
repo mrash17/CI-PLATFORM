@@ -1,0 +1,78 @@
+﻿   @*NavBar 2*@      
+   <nav class="navbar navbar-expand-lg bg-white d-flex align-items-center border-bottom border-top"
+                    style="box-shadow: none;">
+                    <!-- Search -->
+                    <!-- <div class="d-flex align-items-center justify-content-md-start mb-md-0"> -->
+                    <div class="col-md-6 col-8">
+                        <form class="d-flex">
+                            <span class="input-group-text border-0 d-none d-lg-flex"><i
+                                    class="fas fa-search"></i></span>
+                            <input class="form-control border-0 me-2" name="SearchInputdata" id="search-input" type="text" placeholder="Search mission..."
+                                aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="">
+                        
+                        <button class="navbar-toggler navcollapse" type="button" id="filterbtn" href="#offcanvasExample2"
+                            data-bs-toggle="offcanvas" aria-controls="offcanvasExample">
+                            <img src="~/images/filter.png">
+                        </button>
+                    </div>
+                    <div class="container-fluid col-md-6 col-4 p-0 ">
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample2"
+                            aria-labelledby="offcanvasExampleLabel" style="width:50%">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close text-reset" style="margin-left:75%" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body justify-content-end filterCheckbox">
+                                <ul class="navbar-nav my-2 my-lg-0">
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Country
+                                        </a>
+                                        <ul class="dropdown-menu scroll" id="country">
+                                             
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            City
+                                        </a>
+                                        <ul class="dropdown-menu scroll" id="city">
+                                        
+                                        </ul>
+                                    </li>
+
+
+
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Themes
+                                        </a>
+                                        <ul class="dropdown-menu scroll"  id="theme">
+                                        
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Skills
+                                        </a>
+                                        <ul class="dropdown-menu scroll" id="skill">
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
