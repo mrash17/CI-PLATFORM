@@ -206,7 +206,7 @@ namespace CI_PLATFORM.Controllers
         }
 
         //Story for Admin
-        public IActionResult StoryPage(string searchkeyword = "", int pageIndex = 1)
+        public IActionResult StoryPage(string searchkeyword = "", int pageIndex = 1, int min = 0, int max = int.MaxValue)
         {
             var adminid = HttpContext.Session.GetString("sessionAdminid");
 
@@ -222,10 +222,10 @@ namespace CI_PLATFORM.Controllers
 
             }
 
-            var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex);
+            var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex, min, max);
             return PartialView("_adminStoryPage", StoriesList);
         }
-        public IActionResult StoryStats(string searchkeyword = "", int pageIndex = 1)
+        public IActionResult StoryStats(int min = 0, int max = int.MaxValue, string searchkeyword = "", int pageIndex = 1)
         {
             var adminid = HttpContext.Session.GetString("sessionAdminid");
 
@@ -241,15 +241,11 @@ namespace CI_PLATFORM.Controllers
 
             }
 
-            var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex);
+            var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex, min, max);
             return PartialView("_statistics", StoriesList);
         }
 
-        public JsonResult storyStatsList()
-        {
-            var StoriesList = _iAdminInterface.getStories("", 1);
-            return Json(StoriesList);   
-        }
+
         public IActionResult ApprovalStoryByAdmin(int StoryId, int approvalstatus)
         {
             _iAdminInterface.ChangeStoryStatus(StoryId, approvalstatus);
@@ -260,7 +256,20 @@ namespace CI_PLATFORM.Controllers
             var dStory = _iAdminInterface.RemoveStory(StoryId);
             return PartialView("_adminStoryPage");
         }
-
+        //For stats
+        public JsonResult storyStatsList()
+        {
+            var StoriesList = _iAdminInterface.getStories("", 1, 0, int.MaxValue);
+            return Json(StoriesList);
+        }
+        //For Updating using datatable
+        public JsonResult UpdateStoryByDTb(string storyid, string columnName, string columndata)
+        {
+            var StoriesList = _iAdminInterface.updateStoryByDTb(storyid,columnName,columndata);
+            return Json(StoriesList);
+            /*            var updated = _iAdminInterface.updateStoryByDTb(storyid,columnName);
+            */
+        }
 
 
         //Theme for Admin
@@ -648,11 +657,15 @@ namespace CI_PLATFORM.Controllers
             return PartialView("_adminCMSPage");
         }
 
-       public IActionResult RemoveSelectedCms(List<int> checkedCmsValues)
+        public IActionResult RemoveSelectedCms(List<int> checkedCmsValues)
         {
             var dCheckedCms = _iAdminInterface.removeCheckedcms(checkedCmsValues);
             return PartialView("_adminCMSPage");
 
+        }
+        public IActionResult datatTable()
+        {
+            return PartialView("_dataTableStory");
         }
     }
 }

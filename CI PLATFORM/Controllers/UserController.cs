@@ -191,8 +191,8 @@ namespace CI_PLATFORM.Controllers
         {
             var userid = HttpContext.Session.GetString("sessionuserid");
 
-            userid = "44";
-            var userdetails = _iuserInterface.Getuserdata(userid);
+/*            userid = "44";
+*/            var userdetails = _iuserInterface.Getuserdata(userid);
             return Json(userdetails);
             
         }
