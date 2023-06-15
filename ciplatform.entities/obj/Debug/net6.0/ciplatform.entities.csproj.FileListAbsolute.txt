@@ -1,0 +1,28 @@
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.deps.json
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.runtimeconfig.json
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.dll
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ref\ciplatform.entities.dll
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.pdb
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.csproj.AssemblyReference.cache
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.AssemblyInfoInputs.cache
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.AssemblyInfo.cs
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.csproj.CoreCompileInputs.cache
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.dll
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ref\ciplatform.entities.dll
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.pdb
+C:\Users\pci139\Desktop\Tatvasoft\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.genruntimeconfig.cache
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.deps.json
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.runtimeconfig.json
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.dll
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ref\ciplatform.entities.dll
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\bin\Debug\net6.0\ciplatform.entities.pdb
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.csproj.AssemblyReference.cache
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.AssemblyInfoInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.AssemblyInfo.cs
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.csproj.CoreCompileInputs.cache
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.dll
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ref\ciplatform.entities.dll
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.pdb
+C:\Users\pci139\Desktop\CI PLATFORM\Project\CI PLATFORM\MVC\CI PLATFORM\ciplatform.entities\obj\Debug\net6.0\ciplatform.entities.genruntimeconfig.cache
