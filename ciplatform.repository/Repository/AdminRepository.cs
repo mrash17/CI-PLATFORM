@@ -7,15 +7,22 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using OfficeOpenXml;
+using QRCoder;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using X.PagedList;
+
 
 namespace ciplatform.repository.Repository
 {
@@ -23,21 +30,50 @@ namespace ciplatform.repository.Repository
     {
         private readonly CidbContext _CidbContext;
         private readonly IWebHostEnvironment _hostEnvironment;
+        //For md5
+        private readonly IConfiguration _configuration;
+        private string securityKey;
 
-        public AdminRepository(CidbContext cidbContext, IWebHostEnvironment hostEnvironment)
+
+        public AdminRepository(CidbContext cidbContext, IWebHostEnvironment hostEnvironment, IConfiguration configuration)
         {
             _CidbContext = cidbContext;
             _hostEnvironment = hostEnvironment;
+            _configuration = configuration;
+            this.securityKey = _configuration.GetValue<string>("SecurityKey");
+
 
         }
+        public static byte[] BitmapToByteArray(Bitmap bitmap)
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                bitmap.Save(stream, ImageFormat.Png);
+                return stream.ToArray();
+            }
+        }
+
         public IPagedList<UserPageForAdminViewModel> getUsers(string searchkeyword, int pageIndex)
         {
             var Userdata = _CidbContext.Users.Where(m => (searchkeyword == null || m.FirstName.Contains(searchkeyword) || m.SecondName.Contains(searchkeyword) || m.Department.Contains(searchkeyword)) && m.DeletedAt == null).ToList();
             var UsersDeatils = new List<UserPageForAdminViewModel>();
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+
+
+
             foreach (var user in Userdata)
             {
+                //Generating QRcode
+                QRCodeData QrCodeInfo = qrGenerator.CreateQrCode("https://localhost:7246/Admin/EditUser/" + user.UserId, QRCodeGenerator.ECCLevel.Q);
+
+                QRCode qrCode = new QRCode(QrCodeInfo);
+                Bitmap QrBitmap = qrCode.GetGraphic(60);
+                byte[] BitmapArray = BitmapToByteArray(QrBitmap);
+                string QrUri = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(BitmapArray));
                 var EachUser = new UserPageForAdminViewModel
                 {
+                    QRUri = QrUri,
                     FirstName = user.FirstName,
                     SecondName = user.SecondName,
                     Department = user.Department,
@@ -651,10 +687,28 @@ namespace ciplatform.repository.Repository
             var Storydata = _CidbContext.Stories.Include(m => m.StoryMedia).Include(m => m.Mission).Include(m => m.User).Where(m => (searchkeyword == null || m.Title.Contains(searchkeyword) || m.Mission.Title.Contains(searchkeyword) || m.User.FirstName.Contains(searchkeyword) || m.User.SecondName.Contains(searchkeyword)) && m.Viewcount >= min && m.Viewcount <= max && m.DeletedAt == null).ToList();
             //&& m.Status == 2
             var StoryDetails = new List<StoryPageForAdminViewModel>();
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+
+            //MD5 Encryption
+            byte[] keyArray;
+            byte[] keyArrayD;
+
+
+
             foreach (var story in Storydata)
             {
+                QRCodeData QrCodeInfo = qrGenerator.CreateQrCode("https://localhost:7246/StoryListing/storydetail?sid=" + story.StoryId, QRCodeGenerator.ECCLevel.Q);
+
+                QRCode qrCode = new QRCode(QrCodeInfo);
+                Bitmap QrBitmap = qrCode.GetGraphic(60);
+                byte[] BitmapArray = BitmapToByteArray(QrBitmap);
+                string QrUri = string.Format("data:image/png;base64,{0}", Convert.ToBase64String(BitmapArray));
+                string key = securityKey;
+
                 var EachStory = new StoryPageForAdminViewModel
                 {
+                    QRUri = QrUri,
                     StoryId = story.StoryId,
                     StoryTitle = story.Title,
                     MissionId = story.MissionId,
@@ -666,6 +720,71 @@ namespace ciplatform.repository.Repository
 
 
                 };
+                //Encryption
+                MD5CryptoServiceProvider hashmd5 = new MD5CryptoServiceProvider();
+/*                byte[] toEncryptArray = UTF8Encoding.UTF8.GetBytes(EachStory.viewCount.ToString());
+*/                byte[] toEncryptArray = UTF8Encoding.UTF8.GetBytes(EachStory.MissionTitle);
+
+                System.Configuration.AppSettingsReader settingsReader = new AppSettingsReader();
+                
+                keyArray = hashmd5.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
+                hashmd5.Clear();
+                TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
+
+                //set the secret key for the tripleDES algorithm
+                tdes.Key = keyArray;
+                //mode of operation. there are other 4 modes.
+                //We choose ECB(Electronic code Book)
+                tdes.Mode = CipherMode.ECB;
+                //padding mode(if any extra byte added)
+                //PKCS7 adds 1 byte for 1 space
+                tdes.Padding = PaddingMode.PKCS7;
+
+                ICryptoTransform cTransform = tdes.CreateEncryptor();
+                //transform the specified region of bytes array to resultArray
+                byte[] resultArray =
+                  cTransform.TransformFinalBlock(toEncryptArray, 0,
+                  toEncryptArray.Length);
+                //Release resources held by TripleDes Encryptor
+                tdes.Clear();
+
+
+                /* EachStory.MissionTitle
+                 For string*/
+                EachStory.MissionTitle = Convert.ToBase64String(resultArray, 0, resultArray.Length);
+
+                /*                For Converting into int form
+                */
+                /*EachStory.viewCount = BitConverter.ToInt32(resultArray, 0);
+*/
+
+                /*
+                 * Without key directly MD5
+                  var e=  string.Join("", MD5.Create().ComputeHash(Encoding.ASCII.GetBytes(EachStory.viewCount.ToString())).Select(s => s.ToString("x2")));
+                */
+
+
+
+                /*Decryption*/
+                byte[] toDecryptArray = Convert.FromBase64String(EachStory.MissionTitle);
+                MD5CryptoServiceProvider Dhashmd5 = new MD5CryptoServiceProvider();
+
+                keyArrayD = Dhashmd5.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
+                Dhashmd5.Clear();
+                TripleDESCryptoServiceProvider tdesD = new TripleDESCryptoServiceProvider();
+
+                tdesD.Key = keyArrayD;
+                tdesD.Mode = CipherMode.ECB;
+                tdesD.Padding = PaddingMode.PKCS7;
+                ICryptoTransform cTransformDec = tdesD.CreateDecryptor();
+
+                tdesD.Clear();
+                byte[] resultArray2 = cTransformDec.TransformFinalBlock(
+                                     toDecryptArray, 0, toDecryptArray.Length);
+
+                var decr = UTF8Encoding.UTF8.GetString(resultArray2);
+
+
                 StoryDetails.Add(EachStory);
             }
 
@@ -673,6 +792,7 @@ namespace ciplatform.repository.Repository
             return StoryDetails.ToPagedList(pageIndex, 50);
 
         }
+
         public void ChangeStoryStatus(int StoryId, int approvalstatus)
         {
             var UpdateApproval = _CidbContext.Stories.Where(story => story.StoryId == StoryId).FirstOrDefault();
@@ -701,7 +821,7 @@ namespace ciplatform.repository.Repository
 
         public Story updateStoryByDTb(string storyid, string columnName, string columndata)
         {
-            columndata   = HttpUtility.UrlEncode(columndata);
+            columndata = HttpUtility.UrlEncode(columndata);
 
             var story = _CidbContext.Stories.Where(m => m.StoryId.ToString() == storyid).FirstOrDefault();
             var property = typeof(Story).GetProperty(columnName);
@@ -1156,10 +1276,10 @@ namespace ciplatform.repository.Repository
 
                 using (var package = new ExcelPackage(stream))
                 {
-                    
+
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
 
-                   
+
                     List<Admin> data = new List<Admin>();
                     DataTable dataTable = new DataTable();
 
@@ -1180,7 +1300,7 @@ namespace ciplatform.repository.Repository
                         });
                     }
                     // Convert your List<Admin> data to a DataTable
-                    dataTable.Columns.Add(worksheet.Cells[1,1].Value.ToString(), typeof(string));
+                    dataTable.Columns.Add(worksheet.Cells[1, 1].Value.ToString(), typeof(string));
                     dataTable.Columns.Add(worksheet.Cells[1, 2].Value.ToString(), typeof(string));
                     dataTable.Columns.Add(worksheet.Cells[1, 3].Value.ToString(), typeof(string));
                     dataTable.Columns.Add(worksheet.Cells[1, 4].Value.ToString(), typeof(string));
