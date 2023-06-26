@@ -242,6 +242,9 @@ namespace CI_PLATFORM.Controllers
             }
 
             var StoriesList = _iAdminInterface.getStories(searchkeyword, pageIndex, min, max);
+
+
+
             return PartialView("_statistics", StoriesList);
         }
 
