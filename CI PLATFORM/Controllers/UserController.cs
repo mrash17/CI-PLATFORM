@@ -130,9 +130,7 @@ namespace CI_PLATFORM.Controllers
             {
             var bannerList = _iuserInterface.RGetBanner();
             user.bannerList = bannerList.bannerList;
-            if (ModelState.IsValid)
-            {
-                int UserExists = _iuserInterface.Register(user);
+            int UserExists = _iuserInterface.Register(user);
 
                 if (UserExists == 0)
                 {
@@ -146,8 +144,7 @@ namespace CI_PLATFORM.Controllers
                     return RedirectToAction("Index", "User");
                 }
                 return View(user);
-            }
-            return View(user);
+           
 
            }
        
